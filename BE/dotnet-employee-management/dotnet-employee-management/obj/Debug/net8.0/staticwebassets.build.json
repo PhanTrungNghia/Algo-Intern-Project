@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "g6C7Xc+dIJVFiVvqAa48Y5RMPh7eyOpUxg9kNgPGgfk=",
+  "Source": "dotnet-employee-management",
+  "BasePath": "_content/dotnet-employee-management",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
