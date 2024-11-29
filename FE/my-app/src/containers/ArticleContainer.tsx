@@ -4,8 +4,8 @@ import { addArticle, removeArticle } from "../store/actions/articleActionCreator
 import { shallowEqual } from "react-redux"
 import { Dispatch } from "redux"
 import { useDispatch } from "react-redux"
-import { AddArticle } from "../components/AddArticle"
-import { Article } from "../components/Article"
+import { AddArticle } from "../components/Article/AddArticle"
+import { Article } from "../components/Article/Article"
 import { fetchArticlePending, fetchArticleSuccess, fetchArticleError } from "../../src/store/actions/articleActionCreator"
 
 const ArticleContainer: React.FC = () => {

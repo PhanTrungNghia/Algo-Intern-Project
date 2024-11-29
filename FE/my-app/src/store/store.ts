@@ -1,5 +1,5 @@
 import { applyMiddleware, createStore, Store } from "redux"
-import reducer from "./reducers/reducer"
+import reducer from "./reducers/articleReducer"
 import { thunk } from "redux-thunk"
 import employeeReducer from "./reducers/employeeReducer"
 import { useDispatch } from "react-redux"
