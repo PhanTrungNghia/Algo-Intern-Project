@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "81qRhCW26eQlVr8nslzfYfVnReHJl7UDYQHs9EA40Up6CsPQqsI2dslLHwamyufdj3zYpuQdJGRqysgywE9iBg==",
+  "dgSpecHash": "zeV3zyBQVrVFOwDB7J+12jiKaFfmsrscvXoYO2CF5Tv4UUUglWiQ3rwsvlglAgGAhkr/T+8m0MixxlylfSChzA==",
   "success": true,
-  "projectFilePath": "D:\\asp-core-workspace\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj",
+  "projectFilePath": "D:\\GitLab\\BE\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gairo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\gairo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\asp-core-workspace\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj": {}
+    "D:\\GitLab\\BE\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj": {}
   },
   "projects": {
-    "D:\\asp-core-workspace\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj": {
+    "D:\\GitLab\\BE\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\asp-core-workspace\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj",
+        "projectUniqueName": "D:\\GitLab\\BE\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj",
         "projectName": "dotnet-employee-management",
-        "projectPath": "D:\\asp-core-workspace\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj",
+        "projectPath": "D:\\GitLab\\BE\\dotnet-employee-management\\dotnet-employee-management\\dotnet-employee-management.csproj",
         "packagesPath": "C:\\Users\\gairo\\.nuget\\packages\\",
-        "outputPath": "D:\\asp-core-workspace\\dotnet-employee-management\\dotnet-employee-management\\obj\\",
+        "outputPath": "D:\\GitLab\\BE\\dotnet-employee-management\\dotnet-employee-management\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gairo\\AppData\\Roaming\\NuGet\\NuGet.Config",
