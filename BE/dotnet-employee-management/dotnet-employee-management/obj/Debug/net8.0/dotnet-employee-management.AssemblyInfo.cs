@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-employee-management")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7df1d7cc1e9be1324e1b306c84404b0ff0ab7d73")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet-employee-management")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet-employee-management")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
