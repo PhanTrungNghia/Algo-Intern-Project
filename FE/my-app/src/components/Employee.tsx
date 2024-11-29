@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 type Props = {
   id?: number
   setPopup: (isPopup: boolean) => void
-  // removeEmployee: (employee: IEmployee) => void
 }
 
 export const Employee: React.FC<Props> = ({ id, setPopup }) => {
