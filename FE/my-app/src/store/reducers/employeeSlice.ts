@@ -64,12 +64,10 @@ export const updateEmployee = createAsyncThunk(
 export const readAllEmployees = createAsyncThunk(
     "readAllEmployees",
     async (args, { rejectWithValue }) => {
-        console.log("Blah blah ...");
         const url: string = "http://localhost:5088/Employee/get";
         const resp = await fetch(url);
         try {
             const json = await resp.json();
-            console.log(json);
             return json;
         } catch (error) {
             return rejectWithValue(error);
@@ -99,7 +97,8 @@ export const deleteEmployee = createAsyncThunk(
 
 // employee slice với trạng thái ban đầu và các reducer để thay đổi trạng thái.
 // Chúng thực hiện các thao tác CRUD và cũng chuyển đổi employee.
-// Redux-Toolkit sử dụng Immutable.js cho phép chúng ta thay đổi trạng thái nhưng phía nền tảng mọi thứ hoạt động như trạng thái không thay đổi.
+// Redux-Toolkit sử dụng Immutable.js cho phép chúng ta thay đổi trạng thái
+// nhưng phía nền tảng mọi thứ hoạt động như trạng thái không thay đổi.
 const employeeSlice = createSlice({
     name: "employeeSlice",
     initialState,
@@ -166,4 +165,5 @@ const employeeSlice = createSlice({
 });
 
 export default employeeSlice.reducer; // ?
+// Destructing from actions
 export const { searchEmployee } = employeeSlice.actions;

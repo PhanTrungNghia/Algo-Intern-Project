@@ -8,11 +8,11 @@ type Props = {
 }
 
 export const Employee: React.FC<Props> = ({ id, setPopup }) => {
+  // Get data from state
   const employees: readonly IEmployee[] = useSelector(
     (state: any) => state.reducer.employees,
     shallowEqual
   )
-  console.log(employees);
   const employee: IEmployee | undefined = employees.find((e: IEmployee) => e.idEmployee == id)
   return (
     <div className="modalBackground">

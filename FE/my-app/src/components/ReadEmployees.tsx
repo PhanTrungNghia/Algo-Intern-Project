@@ -52,7 +52,7 @@ export const ReadEmployee = () => {
                 type="radio"
                 className="form-check-input"
                 name="active"
-                value="isActive"
+                value="1"
                 id="isActive"
                 onChange={(e) => setActiveRadio(e.target.value)}
             />
@@ -65,7 +65,7 @@ export const ReadEmployee = () => {
                 className="form-check-input"
                 name="active"
                 id="notActive"
-                value="notActive"
+                value="0"
                 onChange={(e) => setActiveRadio(e.target.value)}
             />
             <label className="form-check-label" htmlFor="notActive">
@@ -86,7 +86,9 @@ export const ReadEmployee = () => {
                             console.log(activeRadio)
                             return e;
                         } else {
-                            return e.isActive === activeRadio;
+                            console.log("activeRadio: " + typeof activeRadio);
+                            console.log("isActive: " + typeof e.isActive);
+                            return e.isActive + "" === activeRadio;
                         }
                     })
                     .map((employ: IEmployee) => (

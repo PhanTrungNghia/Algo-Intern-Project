@@ -1,7 +1,4 @@
 import { applyMiddleware, createStore, Store } from "redux"
-import reducer from "./reducers/reducer"
-import { thunk } from "redux-thunk"
-import employeeReducer from "./reducers/employeeReducer"
 import { useDispatch } from "react-redux"
 import { configureStore } from "@reduxjs/toolkit"
 import employeeSlice from "./reducers/employeeSlice"
