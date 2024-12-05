@@ -2,7 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { useDispatch } from "react-redux";
 import { shallowEqual, useSelector } from "react-redux";
-import { deleteEmployee, readAllEmployees } from "../store/reducers/employeeSlice";
+import { deleteEmployee, readAllEmployees } from "../../store/reducers/employeeSlice";
 import { Employee } from "./Employee";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,7 +45,7 @@ export const ReadEmployee = () => {
                 onChange={(e) => setActiveRadio(e.target.value)}
             />
             <label className="form-check-label" htmlFor="all">
-                All
+                Tất cả
             </label>{" "}
             &nbsp;
             <input
@@ -75,7 +75,6 @@ export const ReadEmployee = () => {
                 employees
                     .filter((e: IEmployee) => {
                         if (!searchData) {
-                            console.log(searchData)
                             return e;
                         } else {
                             return e.name.toLowerCase().includes(searchData.toLowerCase());
@@ -83,31 +82,27 @@ export const ReadEmployee = () => {
                     })
                     .filter((e: IEmployee) => {
                         if (!activeRadio) {
-                            console.log(activeRadio)
                             return e;
                         } else {
-                            console.log("activeRadio: " + typeof activeRadio);
-                            console.log("isActive: " + typeof e.isActive);
-                            return e.isActive + "" === activeRadio;
+                            return e.isActive.toString() === activeRadio;
                         }
                     })
                     .map((employ: IEmployee) => (
                         <div key={employ.idEmployee} className="card">
                             <h5 className="card-title">{employ.name}</h5>
                             <h6 className="card-subtitle mb-2 text-muted">{employ.age}</h6>
-                            <p className="card-text">{employ.isActive}</p>
+                            <p className="card-text">{employ.isActive === 1 ? "Hoạt động" : "Ngừng hoạt động"}</p>
                             <button
                                 className="btn btn-success"
                                 onClick={() => {
-                                    console.log("View employee: " + employ.idEmployee)
                                     viewEmployee(employ.idEmployee);
                                 }}
                             >
-                                View
+                                Xem
                             </button>{" "}
                             &nbsp;
                             <Link to={`/edit/${employ.idEmployee}`} className="btn btn-warning">
-                                Edit
+                                Sửa
                             </Link>{" "}
                             &nbsp;
                             <button
@@ -117,7 +112,7 @@ export const ReadEmployee = () => {
                                 }}
                                 className="btn btn-danger"
                             >
-                                Delete
+                                Xóa
                             </button>
                         </div>
                     ))

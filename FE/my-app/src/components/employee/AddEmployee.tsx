@@ -1,7 +1,7 @@
-import * as React from "react"
-import { useDispatch } from "react-redux"
-import { useNavigate } from "react-router-dom"
-import { createEmployee, readAllEmployees } from "../store/reducers/employeeSlice"
+import * as React from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { createEmployee, readAllEmployees } from "../../store/reducers/employeeSlice";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const AddEmployee = () => {
