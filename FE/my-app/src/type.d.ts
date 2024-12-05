@@ -13,6 +13,12 @@ interface IEmployee {
     isActive: int 
 }
 
+interface IAdminFunction {
+    ID?: number;    // Tương ứng với kiểu nullable (string?)
+    NAME: string;   // Tương ứng với kiểu không nullable (string)
+    STATUS: string; // Tương ứng với kiểu không nullable (string)
+}
+
 // Kiểu mảng đối tượng
 type ArticleState = {
     articles: IArticle[]
@@ -22,6 +28,13 @@ type ArticleState = {
 
 type EmployeeState = {
     employees: IEmployee[] 
+    pending: boolean
+    error?: Error
+    searchData?: string
+}
+
+type AdminFunctionState = {
+    adminFunctions: IAdminFunction[] 
     pending: boolean
     error?: Error
     searchData?: string

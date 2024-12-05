@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { searchEmployee } from "../store/reducers/employeeSlice";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { searchAdminFunction } from "../store/reducers/adminFunctionSlice";
 
 export const Navbar = () => {
     const [searchData, setSearchData] = useState<string | undefined>();
@@ -9,7 +9,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         if (searchData) {
-            dispatch(searchEmployee(searchData));
+            dispatch(searchAdminFunction(searchData));
         }
     }, [searchData, dispatch]);
 
@@ -34,12 +34,12 @@ export const Navbar = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="/read">
-                                Danh sách nhân viên
+                                ALL
                             </a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/">
-                                Thêm nhân viên
+                                ADD 
                             </a>
                         </li>
                     </ul>

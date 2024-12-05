@@ -1,10 +1,8 @@
 import { applyMiddleware, createStore, Store } from "redux"
-import reducer from "./reducers/reducer"
-import { thunk } from "redux-thunk"
-import employeeReducer from "./reducers/employeeReducer"
 import { useDispatch } from "react-redux"
 import { configureStore } from "@reduxjs/toolkit"
 import employeeSlice from "./reducers/employeeSlice"
+import adminFunctionSlice from "./reducers/adminFunctionSlice";
 
 // const store: Store<EmployeeState, EmployeeAction> & {
 //     dispatch: DispatchType
@@ -15,7 +13,7 @@ import employeeSlice from "./reducers/employeeSlice"
 // Tạo store với configureStore
 const store = configureStore({
   reducer: {
-    reducer: employeeSlice,
+    adminFunctionReducer: adminFunctionSlice,
   },
 });
 
