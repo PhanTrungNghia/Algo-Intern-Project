@@ -1,6 +1,10 @@
 ﻿using dotnet_employee_management.Data;
 using dotnet_employee_management.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +17,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<EmployeeContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("MySqlConnection"));
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnStr"));
 });
 
 // Add services to DI Container with Scoped lifecycle
@@ -21,6 +25,30 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
 builder.Services.AddCors();
+
+// Thêm dịch vụ Authentication với JWT Bearer authentication scheme
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        // Cấu hình các tham số kiểm tra token JWT
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            // Kiểm tra tính hợp lệ của Issuer (người phát hành token) 
+            // có khớp với ValidIssuer được cung cấp bên dưới.
+            ValidateIssuer = true,
+            ValidateAudience = false,
+            // Kiểm tra thời gian sống của token (token không quá hạn)
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "http://localhost:4200",
+            ValidAudience = "http://localhost:5088",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ByYM000OLlMQG6VVVp1OH7Xzyr7gHuw1qvUC5dcGt3SNM"))
+        };
+    });
+
+// sets up the authorization services,
+// allowing you to protect resources based on the user's claims or roles.
+builder.Services.AddAuthorization(); 
 
 var app = builder.Build();
 
@@ -37,8 +65,14 @@ options.WithOrigins("http://localhost:3000")
 .AllowAnyMethod()
 .AllowAnyHeader());
 
+// adds the authentication middleware to the request pipeline,
+// ensuring that incoming requests will be authenticated.
+app.UseAuthentication();
+// adds the authorization middleware,
+// ensuring that requests are authorized to access protected resources.
 app.UseAuthorization();
 
+// maps the controllers for routing incoming requests to the appropriate endpoints.
 app.MapControllers();
 
 app.Run();

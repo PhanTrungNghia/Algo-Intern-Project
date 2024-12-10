@@ -1,9 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { searchAdminFunction } from "../store/reducers/adminFunctionSlice";
+import { searchAdminFunction } from "../_store/reducers/adminFunctionSlice";
+import { useSelector } from "react-redux";
+import { shallowEqual } from "react-redux";
+import { authActions } from "../_store/store";
 
 export const Navbar = () => {
+    const authUser: IUser = useSelector(
+        (state: any) => state.auth.user,
+        shallowEqual
+    )
     const [searchData, setSearchData] = useState<string | undefined>();
     const dispatch = useDispatch<any>();
 
@@ -12,6 +19,11 @@ export const Navbar = () => {
             dispatch(searchAdminFunction(searchData));
         }
     }, [searchData, dispatch]);
+
+    const logout = () => dispatch(authActions.logout());
+
+    // only show nav when logged in
+    if (!authUser) return null;
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -39,20 +51,39 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/">
-                                ADD 
+                                ADD
                             </a>
                         </li>
                     </ul>
                     <input
-                            className="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                            onChange={(e) => setSearchData(e.currentTarget.value)}
-                        />
-                        <button className="btn btn-outline-success" type="submit">
-                            Tìm
-                        </button>
+                        className="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                        onChange={(e) => setSearchData(e.currentTarget.value)}
+                    />
+                    <button className="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                    <button
+                        onClick={logout}
+                        className="btn btn-link nav-item nav-link"
+                        style={{
+                            color: 'white', /* Màu chữ */
+                            backgroundColor: 'red', /* Màu nền */
+                            border: 'none', /* Bỏ viền */
+                            padding: '10px 20px', /* Đệm */
+                            textAlign: 'center', /* Căn giữa văn bản */
+                            textDecoration: 'none', /* Bỏ gạch chân */
+                            display: 'inline-block', /* Hiển thị dưới dạng khối nội tuyến */
+                            fontSize: '16px', /* Cỡ chữ */
+                            margin: '4px 2px', /* Lề */
+                            cursor: 'pointer', /* Con trỏ chuột */
+                            borderRadius: '5px' /* Bo góc */
+                        }}
+                    >
+                        Logout
+                    </button>
                 </div>
             </div>
         </nav>

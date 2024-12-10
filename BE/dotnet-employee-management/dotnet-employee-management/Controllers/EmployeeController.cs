@@ -1,23 +1,26 @@
 ﻿using dotnet_employee_management.Data;
 using dotnet_employee_management.Models;
 using dotnet_employee_management.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_employee_management.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     public class EmployeeController : ControllerBase
     {
         private readonly ILogger<EmployeeController> _logger;
-        private readonly IConfiguration _configuration;
         private readonly IUnitOfWork _unitOfWork;
         private readonly EmployeeContext _employeeContext;
 
-        public EmployeeController(ILogger<EmployeeController> logger, IConfiguration configuration, IUnitOfWork unitOfWork)
+        public EmployeeController(
+            ILogger<EmployeeController> logger,
+            IUnitOfWork unitOfWork
+            )
         {
             _logger = logger;
-            _configuration = configuration;
             _unitOfWork = unitOfWork;
         }
 
