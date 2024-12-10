@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\data\\employeecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\data\\employeecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Program.cs",
-              "RelativeDocumentMoniker": "dotnet-employee-management\\Program.cs",
-              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Program.cs",
-              "RelativeToolTip": "dotnet-employee-management\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAASwCUAAAATAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "dotnet-employee-management\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "dotnet-employee-management\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgvyAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T06:20:47.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "dotnet-employee-management\\Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "dotnet-employee-management\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T09:22:00.868Z",
+              "WhenOpened": "2024-12-09T03:59:49.514Z",
               "EditorCaption": ""
             },
             {
@@ -62,21 +57,57 @@
               "RelativeDocumentMoniker": "dotnet-employee-management\\Models\\Employee.cs",
               "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Models\\Employee.cs",
               "RelativeToolTip": "dotnet-employee-management\\Models\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T06:26:29.596Z"
+              "WhenOpened": "2024-12-09T03:50:35.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "dotnet-employee-management\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "dotnet-employee-management\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAADgvyMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:19:47.911Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Article.cs",
-              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Models\\Article.cs",
-              "RelativeDocumentMoniker": "dotnet-employee-management\\Models\\Article.cs",
-              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Models\\Article.cs",
-              "RelativeToolTip": "dotnet-employee-management\\Models\\Article.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\appsettings.json",
+              "RelativeDocumentMoniker": "dotnet-employee-management\\appsettings.json",
+              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\appsettings.json",
+              "RelativeToolTip": "dotnet-employee-management\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-09T02:53:27.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeContext.cs",
+              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Data\\EmployeeContext.cs",
+              "RelativeDocumentMoniker": "dotnet-employee-management\\Data\\EmployeeContext.cs",
+              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Data\\EmployeeContext.cs",
+              "RelativeToolTip": "dotnet-employee-management\\Data\\EmployeeContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T06:25:51.292Z"
+              "WhenOpened": "2024-12-09T02:51:31.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Program.cs",
+              "RelativeDocumentMoniker": "dotnet-employee-management\\Program.cs",
+              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Program.cs",
+              "RelativeToolTip": "dotnet-employee-management\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T02:49:01.83Z"
             }
           ]
         }
