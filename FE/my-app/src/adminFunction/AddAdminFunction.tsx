@@ -3,13 +3,13 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import type { FormProps } from 'antd';
 import { Button, Checkbox, Form, Input } from 'antd';
-import { createAdminFunction, readAllAdminFunctions } from "../../_store/reducers/adminFunctionSlice";
+import { createAdminFunction, readAllAdminFunctions } from "../_store/store";
 
 export const AddAdminFunction = () => {
-    const [adminFunction, setAdminFunction] = React.useState<ICreateAdminFunction>({
-        NAME: '',
-        STATUS: '',
-    });
+    // const [adminFunction, setAdminFunction] = React.useState<ICreateAdminFunction>({
+    //     NAME: '',
+    //     STATUS: '',
+    // });
 
     const dispatch = useDispatch<any>();
     const navigate = useNavigate();

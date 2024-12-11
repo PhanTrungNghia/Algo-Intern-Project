@@ -13,7 +13,7 @@ namespace dotnet_employee_management.Controllers
     {
         private readonly ILogger<EmployeeController> _logger;
         private readonly IUnitOfWork _unitOfWork;
-        private readonly EmployeeContext _employeeContext;
+        private readonly DBContext _dbContext;
 
         public EmployeeController(
             ILogger<EmployeeController> logger,

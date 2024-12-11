@@ -8,7 +8,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
+        "Name": "userLogin",
         "Type": "dotnet_employee_management.Dto.Request.UserLoginInfo",
         "IsRequired": true
       }
@@ -84,6 +84,80 @@
       {
         "Name": "employ",
         "Type": "dotnet_employee_management.Models.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "dotnet_employee_management.Controllers.UserController",
+    "Method": "AddUser",
+    "RelativePath": "User/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "dotnet_employee_management.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "dotnet_employee_management.Controllers.UserController",
+    "Method": "DeleteEmployee",
+    "RelativePath": "User/delete/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "dotnet_employee_management.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "User/get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "dotnet_employee_management.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "User/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "dotnet_employee_management.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "User/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "dotnet_employee_management.Models.User",
         "IsRequired": true
       }
     ],

@@ -1,12 +1,12 @@
 import * as React from "react"
 import { useSelector } from "react-redux"
-import { addArticle, removeArticle } from "../../_store/actions/articleActionCreator"
+import { addArticle, removeArticle } from "../_store/actions/articleActionCreator"
 import { shallowEqual } from "react-redux"
 import { Dispatch } from "redux"
 import { useDispatch } from "react-redux"
-import { AddArticle } from "../../_components/article/AddArticle"
-import { Article } from "../../_components/article/Article"
-import { fetchArticlePending, fetchArticleSuccess, fetchArticleError } from "../../_store/actions/articleActionCreator"
+import { AddArticle } from "./AddArticle"
+import { Article } from "./Article"
+import { fetchArticlePending, fetchArticleSuccess, fetchArticleError } from "../_store/actions/articleActionCreator"
 
 const ArticleContainer: React.FC = () => {
   const articles: readonly IArticle[] = useSelector(

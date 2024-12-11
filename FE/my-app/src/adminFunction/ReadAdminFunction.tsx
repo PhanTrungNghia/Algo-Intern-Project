@@ -3,11 +3,15 @@ import { useDispatch } from "react-redux";
 import { shallowEqual } from "react-redux";
 import { useSelector } from "react-redux";
 import { AdminFunction } from "./AdminFunction";
-import { readAllAdminFunctions, deleteAdminFunction } from "../../_store/reducers/adminFunctionSlice";
+import { readAllAdminFunctions, deleteAdminFunction } from "../_store/store";
 
 export const ReadAdminFunction = () => {
     const { adminFunctions, pending, error, searchData } = useSelector(
         (state: any) => state.adminFunctionReducer,
+        shallowEqual
+    )
+    const { users: authUser } = useSelector(
+        (state: any) => state.auth,
         shallowEqual
     )
     const dispatch = useDispatch<any>();
@@ -15,14 +19,7 @@ export const ReadAdminFunction = () => {
     const [isPopup, setPopup] = React.useState(false);
     const [activeRadio, setActiveRadio] = React.useState<string | undefined>(undefined);
     const [isEdited, setIsEdited] = React.useState(false);
-    const { users: authUser } = useSelector(
-        (state: any) => state.auth,
-        shallowEqual
-    )
 
-    React.useEffect(() => {
-        dispatch(readAllAdminFunctions());
-    }, []);
     const viewAdminFunction = (id: number | undefined) => {
         setId(id);
         setPopup(true);
@@ -33,6 +30,11 @@ export const ReadAdminFunction = () => {
         setPopup(true);
         setIsEdited(true);
     };
+
+    React.useEffect(() => {
+        dispatch(readAllAdminFunctions());
+    }, []);
+
     if (pending) {
         return <h2>Loading...</h2>
     }
