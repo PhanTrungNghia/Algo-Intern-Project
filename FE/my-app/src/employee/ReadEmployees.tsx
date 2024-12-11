@@ -2,7 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { useDispatch } from "react-redux";
 import { shallowEqual, useSelector } from "react-redux";
-import { deleteEmployee, readAllEmployees } from "../../_store/reducers/employeeSlice";
+import { deleteEmployee, readAllEmployees } from "../_store/reducers/employeeSlice";
 import { Employee } from "./Employee";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';

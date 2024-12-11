@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Configuration;
 using System.Text;
+using dotnet_employee_management.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<EmployeeContext>(options =>
+builder.Services.AddDbContext<DBContext>(options =>
 {
     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnStr"));
 });
@@ -23,6 +24,8 @@ builder.Services.AddDbContext<EmployeeContext>(options =>
 // Add services to DI Container with Scoped lifecycle
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddCors();
 

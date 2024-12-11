@@ -36,9 +36,6 @@ export const createAdminFunction = createAsyncThunk(
 export const updateAdminFunction = createAsyncThunk(
     "updateAdminFunction",
     async (adminFunction: IUpdateAdminFunction, { rejectWithValue }) => {
-        console.log("Update admin function: " + adminFunction.ID);
-        console.log("Update admin function: " + adminFunction.NAME);
-        console.log("Update admin function: " + adminFunction.STATUS);
         const url: string = `http://localhost:8080/admin/api/AdminFunction/update`;
         const requestOptions = {
             method: 'POST',
@@ -64,7 +61,6 @@ export const readAllAdminFunctions = createAsyncThunk(
         const resp = await fetch(url);
         try {
             const json = await resp.json();
-            console.log(json);
             return json;
         } catch (error) {
             return rejectWithValue(error);
@@ -151,12 +147,12 @@ const adminFunctionSlice = createSlice({
             .addCase(updateAdminFunction.pending, (state) => {
                 state.pending = true;
             })
-            // .addCase(updateAdminFunction.fulfilled, (state, action: PayloadAction<IAdminFunction>) => {
-            //     state.pending = false;
-            //     state.adminFunctions = state.adminFunctions.map((af: IAdminFunction) =>
-            //         af.id === action.payload.id ? action.payload : af
-            //     );
-            // })
+            .addCase(updateAdminFunction.fulfilled, (state, action: PayloadAction<IAdminFunction>) => {
+                state.pending = false;
+                state.adminFunctions = state.adminFunctions.map((af: IAdminFunction) =>
+                    af.ID === action.payload.ID ? action.payload : af
+                );
+            })
             .addCase(updateAdminFunction.rejected, (state, action) => {
                 state.pending = false;
                 state.error = action.error as Error;

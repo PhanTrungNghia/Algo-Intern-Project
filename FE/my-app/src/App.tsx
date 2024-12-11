@@ -1,10 +1,10 @@
 // App.tsx
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Navbar } from './Utils/NavBar';
-import { AddAdminFunction } from './_components/adminFunction/AddAdminFunction';
-import { ReadAdminFunction } from './_components/adminFunction/ReadAdminFunction';
+import { Navbar } from './_components/NavBar';
 import { PrivateRoute } from './_components/PrivateRoute';
 import { Login } from './login/Login';
+import { AddAdminFunction } from './adminFunction/AddAdminFunction';
+import { ReadAdminFunction } from './adminFunction/ReadAdminFunction';
 
 function App() {
   const router = createBrowserRouter([

@@ -3,11 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_employee_management.Data
 {
-    public class EmployeeContext : DbContext
+    public class DBContext : DbContext
     {
-        public EmployeeContext(DbContextOptions options) : base(options) { }
+        public DBContext(DbContextOptions options) : base(options) { }
 
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,9 +1,9 @@
 import { Button, Form, FormProps, Input } from "antd";
 import Modal from "antd/es/modal/Modal"
 import { shallowEqual, useSelector } from "react-redux"
-import { readAllAdminFunctions, updateAdminFunction } from "../../_store/store";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { updateAdminFunction, readAllAdminFunctions } from "../_store/store";
 
 type Props = {
     id?: number;

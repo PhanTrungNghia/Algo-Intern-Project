@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { fetchWrapper } from "../_helpers/fetch-wrapper";
-import { useHistory } from "../_helpers/history"
-import { NavigateFunction, useLocation, useNavigate } from "react-router-dom";
 
 const name = 'auth';
 // implementation
@@ -18,7 +16,7 @@ const createInitialState = (): UserState => {
 const initialState = createInitialState();
 
 // sync actions
-const createReducers = (): UserReducerType => {
+const createReducers = () : UserReducerType => {
     const logout = (state: UserState) => {
         state.user = null;
         localStorage.removeItem('user');

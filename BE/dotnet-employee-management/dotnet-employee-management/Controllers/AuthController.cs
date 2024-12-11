@@ -2,6 +2,8 @@
 using System.Security.Claims;
 using System.Text;
 using dotnet_employee_management.Dto.Request;
+using dotnet_employee_management.Models;
+using dotnet_employee_management.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
@@ -11,14 +13,24 @@ namespace dotnet_employee_management.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        private readonly IUserService _userService;
+        private readonly ILogger<AuthController> _logger;
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] UserLoginInfo user)
+        public AuthController(IUserService userService, ILogger<AuthController> logger)
         {
-            if(user.Username == "admin" && user.Password == "password")
+            _userService = userService;
+            _logger = logger;
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] UserLoginInfo userLogin)
+        {
+
+            User user = await _userService.GetByUsernamePassword(userLogin.Username, userLogin.Password);
+
+            if (user != null)
             {
-                var token = GenerateJwtToken(user.Username);
-                return Ok(new { token });
+                var token = GenerateJwtToken(userLogin.Username);
+                return Ok(new { user.ID, user.NAME, token });
             }    
             return Unauthorized();
         }

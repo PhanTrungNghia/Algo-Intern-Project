@@ -168,5 +168,5 @@ D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\
 D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\obj\Debug\net9.0\dotnet-employee-management.pdb
 D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\obj\Debug\net9.0\dotnet-employee-management.genruntimeconfig.cache
 D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\obj\Debug\net9.0\ref\dotnet-employee-management.dll
-D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\bin\Debug\net9.0\Dapper.Oracle.dll
+D:\Algo Intern Project\BE\dotnet-employee-management\dotnet-employee-management\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

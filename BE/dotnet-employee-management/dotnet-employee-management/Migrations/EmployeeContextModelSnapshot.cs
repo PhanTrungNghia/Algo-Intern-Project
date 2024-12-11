@@ -9,7 +9,7 @@ using dotnet_employee_management.Data;
 
 namespace dotnet_employee_management.Migrations
 {
-    [DbContext(typeof(EmployeeContext))]
+    [DbContext(typeof(DBContext))]
     partial class EmployeeContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -26,26 +26,59 @@ namespace dotnet_employee_management.Migrations
                     b.Property<int>("IdEmployee")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("NUMBER(10)")
-                        .HasColumnName("IDEmployee");
+                        .HasColumnName("IDEMPLOYEE");
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdEmployee"));
 
                     b.Property<string>("Age")
                         .HasMaxLength(100)
-                        .HasColumnType("NVARCHAR2(100)");
+                        .HasColumnType("NVARCHAR2(100)")
+                        .HasColumnName("AGE");
 
                     b.Property<int>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("NUMBER(10)")
-                        .HasDefaultValue(0);
+                        .HasDefaultValue(0)
+                        .HasColumnName("ISACTIVE");
 
                     b.Property<string>("Name")
                         .HasMaxLength(50)
-                        .HasColumnType("NVARCHAR2(50)");
+                        .HasColumnType("NVARCHAR2(50)")
+                        .HasColumnName("NAME");
 
                     b.HasKey("IdEmployee");
 
                     b.ToTable("EMPLOYEES");
+                });
+
+            modelBuilder.Entity("dotnet_employee_management.Models.User", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("NUMBER(10)")
+                        .HasColumnName("ID");
+
+                    OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("NAME")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("NVARCHAR2(50)")
+                        .HasColumnName("NAME");
+
+                    b.Property<string>("PASSWORD")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnName("PASSWORD");
+
+                    b.Property<string>("TOKEN")
+                        .IsRequired()
+                        .HasColumnType("NVARCHAR2(2000)")
+                        .HasColumnName("TOKEN");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("USERS");
                 });
 #pragma warning restore 612, 618
         }
