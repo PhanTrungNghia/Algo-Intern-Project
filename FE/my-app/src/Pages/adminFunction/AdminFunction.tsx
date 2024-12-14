@@ -3,7 +3,7 @@ import Modal from "antd/es/modal/Modal"
 import { shallowEqual, useSelector } from "react-redux"
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { updateAdminFunction, readAllAdminFunctions } from "../_store/store";
+import { updateAdminFunction, readAllAdminFunctions } from "../../_store/store";
 
 type Props = {
     id?: number;
@@ -40,7 +40,7 @@ export const AdminFunction: React.FC<Props> = ({ id, setPopup, isPopup, isEdited
         //Gọi dispatch với createAdminFunction
         dispatch(updateAdminFunction(adminFunction));
         setPopup(false);
-        navigate("/read");
+        navigate("/readAllAdminFunction");
         dispatch(readAllAdminFunctions());
     };
 

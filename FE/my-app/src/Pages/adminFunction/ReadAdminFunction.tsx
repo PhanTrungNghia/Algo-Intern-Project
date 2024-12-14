@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { shallowEqual } from "react-redux";
 import { useSelector } from "react-redux";
 import { AdminFunction } from "./AdminFunction";
-import { readAllAdminFunctions, deleteAdminFunction } from "../_store/store";
+import { readAllAdminFunctions, deleteAdminFunction } from "../../_store/store";
 
 export const ReadAdminFunction = () => {
     const { adminFunctions, pending, error, searchData } = useSelector(

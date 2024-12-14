@@ -1,4 +1,8 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
+import { 
+    createAsyncThunk, 
+    createSlice, 
+    PayloadAction 
+} from "@reduxjs/toolkit"
 
 // initial admin function state
 const initialState: AdminFunctionState = {
@@ -73,22 +77,25 @@ export const deleteAdminFunction = createAsyncThunk(
     async (id: number | undefined, { rejectWithValue }) => {
     // Nếu hàm deleteAdminFunction không trả về data 
     // thì createAsyncThunk sẽ expect là action.payload nhận vào từ component có thể undefined
-    // => Khai bảo kiểu sử lý trạng thái fullfilled của hàm deleteAdminFunction là PayloadAction<{ id: number | undefined}>
-    //     const url: string = `http://localhost:5088/Employee/delete/${id}`;
-    //     const requestOptions = {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //     };
-    //     const resp = await fetch(url, requestOptions);
-    //     try {
-    //         const json = await resp.json();
-    //         return json;
-    //     } catch (error) {
-    //         return rejectWithValue(error);
-    //     }
-    console.log("Deleted id: " + id);
+    // => Khai bảo kiểu xử lý trạng thái fullfilled của hàm deleteAdminFunction là PayloadAction<{ id: number | undefined}>
+        const url: string = "http://localhost:8080/admin/api/AdminFunction/delete";
+        const idRequest: IdRequest = {
+            id: id!.toString()
+        }
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(idRequest),
+        };
+        const resp = await fetch(url, requestOptions);
+        try {
+            const json = await resp.json();
+            return json;
+        } catch (error) {
+            return rejectWithValue(error);
+        }
     }
 )
 

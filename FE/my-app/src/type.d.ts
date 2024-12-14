@@ -10,10 +10,24 @@ interface IEmployee {
     idEmployee?: number
     name: string
     age: string
-    isActive: int 
+    isActive: int
 }
 
 interface IAdminFunction {
+    ID?: number // Tương ứng với kiểu nullable (string?)
+    NAME?: string // Tương ứng với kiểu không nullable (string)
+    STATUS?: string // Tương ứng với kiểu không nullable (string)
+}
+
+interface IAdminFunctionWithIndex {
+    INDEX: number
+    ID?: number // Tương ứng với kiểu nullable (string?)
+    NAME?: string // Tương ứng với kiểu không nullable (string)
+    STATUS?: string // Tương ứng với kiểu không nullable (string)
+}
+
+interface IAdminFunctionWithKey {
+    KEY?: number
     ID?: number // Tương ứng với kiểu nullable (string?)
     NAME?: string // Tương ứng với kiểu không nullable (string)
     STATUS?: string // Tương ứng với kiểu không nullable (string)
@@ -48,11 +62,15 @@ interface User {
 
 interface UserLogin {
     username: string;
-    password: string
+    password: string;
+}
+
+interface IdRequest {
+    id: string;
 }
 
 // Định nghĩa kiểu cho state
-type UserState  = {
+type UserState = {
     user: User | null;
     error: Error | null;
     pending: boolean;
@@ -70,14 +88,14 @@ type ArticleState = {
 }
 
 type EmployeeState = {
-    employees: IEmployee[] 
+    employees: IEmployee[]
     pending: boolean
     error?: Error
     searchData?: string
 }
 
 type AdminFunctionState = {
-    adminFunctions: IAdminFunction[] 
+    adminFunctions: IAdminFunction[]
     pending: boolean
     error?: Error
     searchData?: string
@@ -107,6 +125,43 @@ type FieldType = {
 type HistoryType = {
     navigate: NavigateFunction;
     location: Location<any>;
+}
+
+type HomeCardProps = {
+    title: string;
+    value: number;
+    icon: ReactNode;
+}
+
+type AdminFunctionTableChartProps = {
+    dataSource: IAdminFunction[];
+    isLoading: boolean;
+    labels: string[];
+}
+
+type BarChartType = {
+    options: ChartOptions<'bar'>;
+    data: ChartData<'bar'>;
+}
+
+type TableColumnType1 = {
+    title: string;
+    dataIndex: string;
+}
+
+type TableColumnType2 = {
+    title: string;
+    dataIndex: string;
+    align?: string;
+    editable?: boolean;
+}
+
+interface EditableCellProps {
+    editable: boolean;
+    dataIndex: keyof IAdminFunctionWithKey;
+    title: React.ReactNode;
+    record: IAdminFunctionWithKey;
+    children: React.ReactNode;
 }
 
 // Kiểu hàm

@@ -3,8 +3,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from '../_helpers/history';
-import { authActions } from "../_store/auth.slice";
+import { useHistory } from '../../_helpers/history';
+import { authActions } from "../../_store/auth.slice";
 import { shallowEqual } from "react-redux";
 
 export const Login = () => {
