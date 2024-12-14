@@ -1,0 +1,17 @@
+:root {
+    --height-header: 50px;
+    --width-sidebar: 260px;
+    --bg-body: #E9ECF3;
+    --bg-primary: #FFFFFF;
+    --bg-menu: #FFFFFF;
+    --bg-menu-active: #e6f4ff;
+    --color-primary: #1677FF;
+    --text-color: #000;
+    --bg-2: #EEEEF1;
+    --font-size: 14px;
+    --font-size-title: 15px;
+    --border-color: #dee2e6;
+    --bg-table-header: #f2f2f2;
+    --bg-table-row-even: #f2f2f2;
+    --border-table-cell: #dee2e6;
+}

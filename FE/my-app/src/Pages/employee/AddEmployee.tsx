@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { createEmployee, readAllEmployees } from "../_store/reducers/employeeSlice";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createEmployee, readAllEmployees } from "../../_store/reducers/employeeSlice";
 
 export const AddEmployee = () => {
     const [employee, setEmployee] = React.useState<IEmployee>({
@@ -18,7 +18,7 @@ export const AddEmployee = () => {
         e.preventDefault();
         dispatch(createEmployee(employee));
         dispatch(readAllEmployees());
-        navigate("/read");
+        navigate("/readAllAdminFunction");
     }
 
     const handleEmployeeData = (e: React.FormEvent<HTMLInputElement>) => {

@@ -28,7 +28,7 @@ export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/read">
+                <a className="navbar-brand" href="/readAllAdminFunction">
                     Algo Paltform
                 </a>
                 <button
@@ -45,12 +45,12 @@ export const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/read">
+                            <a className="nav-link active" aria-current="page" href="/readAllAdminFunction">
                                 ALL
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">
+                            <a className="nav-link" href="/addAdminFunction">
                                 ADD
                             </a>
                         </li>

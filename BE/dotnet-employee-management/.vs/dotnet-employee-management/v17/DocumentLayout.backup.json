@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|d:\\algo intern project\\be\\dotnet-employee-management\\dotnet-employee-management\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89411A1C-8873-4287-A616-BE9FC91852D1}|dotnet-employee-management\\dotnet-employee-management.csproj|solutionrelative:dotnet-employee-management\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Models\\Employee.cs",
@@ -74,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Service\\IUserService.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Service\\IUserService.cs",
@@ -86,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Service\\UserService.cs",
@@ -98,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Controllers\\EmployeeController.cs",
@@ -110,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Repository\\UserRepository.cs",
@@ -118,24 +114,12 @@
               "RelativeToolTip": "dotnet-employee-management\\Repository\\UserRepository.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAlwD0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:11:34.07Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "dotnet-employee-management\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "dotnet-employee-management\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAawBsAAABpAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T04:10:03.111Z",
+              "WhenOpened": "2024-12-11T04:11:34.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Controllers\\UserController.cs",
@@ -147,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Models\\User.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Models\\User.cs",
@@ -159,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Repository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Repository\\IUserRepository.cs",
@@ -171,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "EmployeeContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Migrations\\EmployeeContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Migrations\\EmployeeContextModelSnapshot.cs",
@@ -183,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Program.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Program.cs",
@@ -195,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\Algo Intern Project\\BE\\dotnet-employee-management\\dotnet-employee-management\\Repository\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "dotnet-employee-management\\Repository\\IGenericRepository.cs",

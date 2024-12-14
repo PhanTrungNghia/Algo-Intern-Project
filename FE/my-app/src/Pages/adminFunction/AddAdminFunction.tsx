@@ -1,33 +1,12 @@
-import * as React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import type { FormProps } from 'antd';
-import { Button, Checkbox, Form, Input } from 'antd';
-import { createAdminFunction, readAllAdminFunctions } from "../_store/store";
+import { Button, Form, Input } from 'antd';
+import { createAdminFunction, readAllAdminFunctions } from "../../_store/store";
 
 export const AddAdminFunction = () => {
-    // const [adminFunction, setAdminFunction] = React.useState<ICreateAdminFunction>({
-    //     NAME: '',
-    //     STATUS: '',
-    // });
-
     const dispatch = useDispatch<any>();
     const navigate = useNavigate();
-
-    // const handleSubmit = (e: React.FormEvent) => {
-    //     e.preventDefault();
-    //     dispatch(createAdminFunction(adminFunction));
-    //     dispatch(readAllAdminFunctions());
-    //     navigate("/read");
-    // }
-
-    // const handleAdminFunctionData = (e: React.FormEvent<HTMLInputElement>) => {
-    //     const { id, value } = e.currentTarget;
-    //     setAdminFunction((prevAdminFunction) => ({
-    //         ...prevAdminFunction,
-    //         [id]: value
-    //     }))
-    // }
 
     function generateRandomID(length: number): string {
         let result = '';
@@ -53,7 +32,7 @@ export const AddAdminFunction = () => {
         //Gọi dispatch với createAdminFunction
         dispatch(createAdminFunction(adminFunction));
         dispatch(readAllAdminFunctions());
-        navigate("/read");
+        navigate("/readAllAdminFunction");
     };
 
     const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
